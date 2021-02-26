@@ -1,10 +1,12 @@
 # Setup
 
-## Introduction
-There are three goals of setup:
+## Purpose
+There are five goals of the setup stage:
 1. Create an appropriate Virtual Machine for Embedded Linux development and Yocto image builds.
-2. Create the first Yocto image and "upload" it to the RaspberryPi (and prove it).
+2. Setup the SD card on the VM and create the partitions.
 3. Build a serial debugger to read the bootloader serial output.
+4. Build the skeleton Yocto image.
+5. Prove steps 1-4 by getting useful data through the serial UART.
 
 ## Ubuntu Virtual Machine Overview
 Ok, let's begin - reminder I am using a Windows 10 machine - which Yocto does not support.\
@@ -47,7 +49,9 @@ sudo ./VBoxLinuxAdditions.run
 ```
 4. Restart the VM.
 
-## Yocto First Image
+## Deploying SD Card to VM
+I am using my laptop's SD card reader.
+
 
 
 ## Arduino Serial Debugger
@@ -75,3 +79,8 @@ Like anything else, it's very important to connect the pins properly because **T
 Ok that's the last warning you'll get from me.\
 In no way am I responsible for you damaging your RaspberryPi4 board.\
 Always read your datasheet/pinouts/references or face GPIO (and other) catastrophic failures.
+
+## Building the First Yocto Image
+
+## Putting It All Together
+
